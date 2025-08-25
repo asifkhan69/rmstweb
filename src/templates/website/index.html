@@ -1,0 +1,648 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+    {% load static %}    
+    <!-- hero-header -->
+    <div class="bg-homepage vh-100 d-flex align-items-center flex-column">
+        <!-- Navbar -->
+        <div class="py-5 m-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="pt-lg-5">
+                            <p class="fw-bold text-uppercase text-primary"></p>
+                            <h1 class="fw-bold display-3 lh-1 mb-4 text-black">Orchestrating the right balance in business</h1>
+                            <p class="lead text-dark">By creating profitable customer relationship and identify industry gaps, provide end-to-end services and solutions that can help improve their customers experience</p>
+                            <div class="d-flex align-items-center gap-3 mt-5">
+                                <a href="#about" class="btn btn-primary btn-lg rounded-0">Learn More</a>
+                                <a href="#services" class="btn btn-outline-primary btn-lg rounded-0">Our Services</a>
+                                <a href="#insight" class="btn btn-primary px-3 ms-2 transition-3d-hover rounded-0"> <i class="ri-vidicon-2-fill me-2"></i> Company Video </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="py-0">
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-4 g-md-5">
+                    <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                        <img src="{% static 'img/about-strategy-image.webp' %}" loading="lazy" alt="strategy-img" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="mb-5">
+                            <small class="text-uppercase badge rounded-0 bg-primary">A Service and Solution Company</small>
+                            <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">About</span> RMS Techknowledgy</h1>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">RMS Techknowledgy as formed keeping in mind the commercial & technology side of corporate and consumer business a "B2B Business”. We do business where innovation meets the industry requirements and operate in the space of InsurTech, FinTech and Payments.</p>
+                        </div>
+                        <div class="row g-4 g-md-5 mb-5">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="fw-bold text-black display-4" data-aos="fade-right" data-aos-duration="700">25%</h2>
+                                    <p class="text-primary lead" data-aos="fade-right" data-aos-duration="700">Business Process Automation</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="fw-bold text-black display-4" data-aos="fade-left" data-aos-duration="700">25%</h2>
+                                    <p class="text-primary lead" data-aos="fade-left" data-aos-duration="700">Banking Solutions</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="fw-bold text-black display-4" data-aos="fade-up" data-aos-duration="700">30%</h2>
+                                    <p class="text-primary lead" data-aos="fade-up" data-aos-duration="700">Insurance Solutions</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="fw-bold text-black display-4" data-aos="fade-up" data-aos-duration="700">20%</h2>
+                                    <p class="text-primary lead" data-aos="fade-up" data-aos-duration="700">E-Commerce Solution</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{% url 'organisation-page' %}" class="btn btn-primary btn-lg rounded-0" data-aos="fade-up" data-aos-duration="900">FIND OUT MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-md-5 g-4">
+                    <div class="col-lg-6 col-12">
+                        <div class="mb-5">
+                            <small class="text-uppercase badge rounded-0 bg-primary">Company bridging the gaps</small>
+                            <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">We provide</span> solutions through digital platform</h1>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Our proprietary platforms, which includes Insurtech Application, Web Portal Application, Fintech Solutions and Digital Services.</p>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">The company has also introduced International Value Added Services in Pakistan and regional markets.</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-12">
+                                <ul class="list-unstyled d-grid gap-3">
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Customer on-boarding Digital Services</li>
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>AML/CFT Screening</li>
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>e-KYC/CDD</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <ul class="list-unstyled d-grid gap-3">
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Audit Management Solutions</li>
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Compliance Solutions</li>
+                                    <li><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Insurance Solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <img src="{% static 'img/about-company-image.webp' %}" loading="lazy" alt="meeting" class="img-fluid rounded-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="py-0">
+        <!-- What We Do as Services-->
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">At RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Our Services</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">We provide an array of proprietary technology platforms, along with re-sell third party applications. We are a team of experts for development of automated systems, platform and digital mobile applications.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-dashboard-2-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Platforms</h5>
+                                <p class="mb-0">We specialize in crafting innovative proprietary platforms to meet the unique needs of our clients. Our solutions are designed to enhance automation with a solid foundation for businesses to thrive in a competitive digital landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-computer-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Web Development</h5>
+                                <p class="mb-0">Every modern solution is an amalgamation of multiple interconnected technologies. Therefore, we here at RMS Techknowledgy have assembled a team of web application developers with years of experience in all major technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-smartphone-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Mobile Applications</h5>
+                                <p class="mb-0">In today’s world mobile application development has shown growth in the economy, due to the reason, RMS Techknowledgy as shown interest in this digital vertical and has committed to excel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-apps-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Digital Marketing</h5>
+                                <p class="mb-0">We work with people and organizations who have ambitious missions – whether they are in the commercial, social or government sectors. We set up smart teams who love challenges and think disruptively to help our clients succeed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-speak-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Artificial Intelligence</h5>
+                                <p class="mb-0">Applies deep domain expertise in AI technologies to uncover the unmet needs of enterprises and solve some of their toughest problems. AI and Machine learning technologies are accelerating automation at a lightning pace.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-search-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Resource Augmentation</h5>
+                                <p class="mb-0">Resource augmentation is commonly used in various industries, including IT, finance, healthcare, and more. It provides organizations with flexibility, agility, and access to specialized expertise, enabling them to achieve their goals more effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-center gap-3 mt-5">
+                            <a href="{% url 'services-page' %}" class="btn btn-primary btn-lg rounded-0">Find More</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg rounded-0">Take Action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="py-0">
+        <div class="bg-black py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-warning text-black">RMS Techknowlegy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2 text-white" data-aos="fade-up" data-aos-duration="600">Our Portfolio</h1>
+                        <p class="lead m-0 text-white-50" data-aos="fade-up" data-aos-duration="700">Our portfolio highlights our successful collaborations and the tangible impact we’ve made. From concept to completion, our work speaks for itself.</p>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-bg-dark border-0 rounded-0 overflow-hidden transition-3d-hover mb-5" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="{% static 'img/projects/project-image-2.webp' %}" loading="lazy" class="card-img rounded-0" alt="projects">
+                            <div class="card-img-overlay d-flex align-items-end p-4">
+                                <div class="bg-black bg-opacity-75 rounded-0 px-4 py-3">
+                                    <h4 class="card-title fw-bold mb-1">AML/CFT</h4>
+                                    <small class="mb-0"><i class="ri-link me-2"></i> KYC/CDD- Customer Screeing - MSAASPRO</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-bg-dark border-0 rounded-0 overflow-hidden transition-3d-hover" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="{% static 'img/projects/project-image-4.webp' %}" loading="lazy" class="card-img rounded-0" alt="projects">
+                            <div class="card-img-overlay d-flex align-items-end p-4">
+                                <div class="bg-black bg-opacity-75 rounded-0 px-4 py-3">
+                                    <h4 class="card-title fw-bold mb-1">Compliance CRM</h4>
+                                    <small class="mb-0"><i class="ri-link me-2"></i> RegTech - Automation for Compliance/Risk Deparment - CBOX</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card text-bg-dark border-0 rounded-0 overflow-hidden transition-3d-hover mb-5" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="{% static 'img/projects/project-image-1.webp' %}" loading="lazy" class="card-img rounded-0" alt="projects">
+                            <div class="card-img-overlay d-flex align-items-end p-4">
+                                <div class="bg-black bg-opacity-75 rounded-0 px-4 py-3">
+                                    <h4 class="card-title fw-bold mb-1">Digital Services</h4>
+                                    <small class="mb-0"><i class="ri-link me-2"></i> Customer On-boarding Digital Services - GO DIGITAL</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-bg-dark border-0 rounded-0 overflow-hidden transition-3d-hover" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="{% static 'img/projects/iams-system.webp' %}" loading="lazy" class="card-img rounded-0" alt="projects">
+                            <div class="card-img-overlay d-flex align-items-end p-4">
+                                <div class="bg-black bg-opacity-75 rounded-0 px-4 py-3">
+                                    <h4 class="card-title fw-bold mb-1">Audit Management</h4>
+                                    <small class="mb-0"><i class="ri-link me-2"></i> RegTech - Audit Automation - ABOX</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Some Insights -->
+        <div id="insight" class="py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Some Insights</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">At RMS Techknowledgy, we pride ourselves on our innovative solutions and customer-centric approach.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 some-insight-video">
+                        <a href="#" class="position-relative" data-bs-toggle="modal" data-bs-target="#videoModal"
+                           data-video-url="{% static 'video/RMST-Profile-Video.mp4' %}">
+                            <img id="videoThumbnail" src="{% static 'img/meeting-video.webp' %}" alt="meeting-video" class="img-fluid rounded-0">
+                            <span><i class="ri-play-circle-fill display-2 position-absolute top-0 bottom-0 some-insight-video-play-button"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-body p-0">
+                                <div class="video-wrapper position-relative w-100" style="padding-top: 62.5%;"> <!-- 5:3 aspect ratio -->
+                                    <video id="companyVideo" controls autoplay class="position-absolute top-0 start-0 w-150 h-100 object-fit-cover">
+                                        <source src="" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- numbers -->
+        <div class="bg-black py-5">
+            <div class="container pt-5 mt-5">
+                <div class="row g-4 pt-5 mt-5">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-white display-3">40+</h2>
+                            <p class="text-primary lead">Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-white display-3">2+</h2>
+                            <p class="text-primary lead">Regional Presence</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-white display-3">4+</h2>
+                            <p class="text-primary lead">Platforms</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-white display-3">Multiple</h2>
+                            <p class="text-primary lead">Technology Stacks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What peoples say about us -->
+        <div id="clients" class="py-5">
+            <div class="container pt-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">What our client's say about us</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Discover our clients’ experiences.</p>
+                    </div>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="bg-white shadow p-5">
+                            <div class="d-flex align-items-center gap-3 mb-4 w-100 d-flex flex-column">
+                                <img src="{% static 'img/profile/Olp-logo.webp' %}" loading="lazy" alt="people-1" class="img-fluid rounded-circle people-img">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Raheel Ahmed</h5>
+                                    <p class="mb-0 text-muted text-center">OLP Modaraba</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">“KYC and AML checks used to slow us down—now they’re effortless.
+Their tech integrates perfectly with our systems and saves us hours weekly.
+We trust them as a true partner in our digital transformation.”</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="bg-white shadow p-5">
+                            <div class="d-flex align-items-center gap-3 mb-4 w-100 d-flex flex-column">
+                                <img src="{% static 'img/profile/Wemsol-logo.webp' %}" loading="lazy" alt="people-2" class="img-fluid rounded-circle people-img">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Ali Islam</h5>
+                                    <p class="mb-0 text-muted text-center">Wemsole Private Limited</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">“Their platform helped us automate complex compliance workflows with ease.
+Now, audits are no longer stressful, and data accuracy has improved drastically.
+It’s like having a compliance expert working round the clock.”</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="bg-white shadow p-5">
+                            <div class="d-flex align-items-center gap-3 mb-4 w-100 d-flex flex-column">
+                                <img src="{% static 'img/profile/wali-Financials.webp' %}" loading="lazy" alt="people-3" class="img-fluid rounded-circle people-img">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Adnan Akhter</h5>
+                                    <p class="mb-0 text-muted text-center">Wali Financial Private Limited</p>
+                                </div>
+                            </div>
+                            <p class="mb-0">“We’ve significantly reduced onboarding time with their seamless digital solution.
+It’s fast, user-friendly, and ensures full regulatory compliance.
+Our customers love the simplicity—and so do we.”</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" class="py-0">
+        <!-- Our Team -->
+        <div class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Our Team</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">People Behind the Progress: Learn more about the innovative minds shaping our future.</p>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Atifirshad-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Atif Irshad</h5>
+                                <p class="card-text text-muted mb-0">Chief Executive Officer & Co-Founder</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/AsifKhan-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Asif Khan</h5>
+                                <p class="card-text text-muted mb-0">Chief Technology Officer & Co-Founder</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/FazzyAftab640x640.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Aftab Faizy Haider</h5>
+                                <p class="card-text text-muted mb-0">Country Manager Singapore</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/waqar-matloob.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Waqar Matloob</h5>
+                                <p class="card-text text-muted mb-0">Senior Consultant - Canada</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Javed-image.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Jawaid Anwer</h5>
+                                <p class="card-text text-muted mb-0">Chief Compliance Officer</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Mahfooz-Mirza.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Mirza Mahfooz</h5>
+                                <p class="card-text text-muted mb-0">Director Operation USA</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-facebook-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-twitter-fill"></i></a>
+                                <a href="#" class="link-dark bg-white rounded-circle shadow icon-sm hover:bg-warning"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Global Advisor Sections -->
+    <div id="advisors" class="py-0">
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Our Global Advisors</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Global Expertise at our Fingertips: Our International Business Advisor, brings a wealth of global market knowledge and strategic insights to help us navigate and excel in international markets.</p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/sa.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Saadat Hussain Syed</h5>
+                                <p class="card-text text-muted mb-0">Advisor - UAE</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">A reputed senior International Banker with over 35 years diversified experience in Correspondent Banking, Trade & Payments, Networking, Compliance, Business Strategies & Loans etc..), Consumer & Commercial Banking, Risk Management, Project Financing & Syndications etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Ashraf-Ali.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Ashraf Ali Abdul Kadir</h5>
+                                <p class="card-text text-muted mb-0">Advisor - Malaysia</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">An experienced professional banker in consumer banking, particularly in e-banking, cards & payment, loans and deposits for over 28 years, having served in Citibank and Maybank, including as Senior Executive Vice-President at Maybank and Chief Executive Officer of Maybank Finance, and advisor  to Bank Islam Malaysia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Karim-Aziz-pic2.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Karim Aziz</h5>
+                                <p class="card-text text-muted mb-0">Advisor - Canada</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">Karim Aziz is a seasoned Compliance and Finance Executive with over 25 years of experience across the banking, financial services, and nonprofit sectors. Leveraging extensive international experience across Canada, Saudi Arabia, UAE, Bahrain, and Pakistan, he has delivered customized, high-level compliance and financial consulting services to clients seeking strategic insights, governance support, and regulatory alignment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card bg-transparent border-0 rounded-0 text-center">
+                                <img src="{% static 'img/team/Khalid-Khan-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Khalid I. Khan</h5>
+                                    <p class="card-text text-muted mb-0">Advisor - LATAM</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                    <p class="card-text text-muted text-start mb-0">Certified Network/Telecom and Solutions Architect
+With over 20 years of expertise, Khalid is an accomplished Certified Network/Telecom and Solutions Architect specializing in architecture design, deployment, transformation, support, and management. Khalid's work spans critical areas such as VoIP Telephony, LAN/WAN/WLAN, Data Center, IoT, and Cloud Computing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card bg-transparent border-0 rounded-0 text-center">
+                                <img src="{% static 'img/team/Puplus-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Paulus Budihardja</h5>
+                                    <p class="card-text text-muted mb-0">Advisor - Indonesia</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                    <p class="card-text text-muted text-start mb-0">Paulus Budihardja brings over three decades of extensive business experience encompassing marketing, sales management, business development, and general management. His expertise lies in strategic planning, process redesign and he excels in managing brands and business units.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-0 bg-light">
+        <div class="pt-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Contact Us</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Let’s work together to experience exceptional business relationship, that can take your business to next level of automation.</p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 col-12">
+                        <div class="card border-0 text-bg-dark rounded-0 overflow-hidden">
+                            <img src="{% static 'img/nastp2-office2.webp' %}" loading="lazy" class="card-img opacity-50" alt="pakistan">
+                            <div class="card-img-overlay d-flex align-items-end p-5">
+                                <div>
+                                    <h2 class="card-title fw-bold">Pakistan</h2>
+                                    <p>RMS TECHKNOWLEDGY PRIVATE LIMITED</p>
+                                    <p class="card-text">Ground Floor Office No. 04 - A, Building S- 4, NASTP 2 Silicon Valley, Shahrah-e- Faisal, Karachi, Pakistan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="card border-0 text-bg-dark rounded-0 overflow-hidden">
+                            <img src="{% static 'img/Singapore-office-pic.webp' %}" loading="lazy" class="card-img opacity-50" alt="dubai">
+                            <div class="card-img-overlay d-flex align-items-end p-5">
+                                <div>
+                                    <h2 class="card-title fw-bold">Singapore</h2>
+                                    <p>RMS TECHKNOWLEDGY SINGAPORE PTE. LTD.</p>
+                                    <p class="card-text">7500A BEACH ROAD, #09-324, THE PLAZA, SINGAPORE 199591</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="rounded-0 shadow text-center box p-5 w-100 d-flex flex-column">
+                            <i class="ri-road-map-fill ri-3x text-primary"></i>
+                            <div class="pt-2 mt-auto">
+                                <h5 class="fw-bold">Physical Address​</h5>
+                                <p class="mb-0">Ground Floor Office No. 04 - A, Building S- 4, NASTP 2 Silicon Valley, Shahrah-e- Faisal, Karachi, Pakistan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="rounded-0 shadow text-center box p-5 w-100 d-flex flex-column">
+                            <i class="ri-time-fill ri-3x text-primary"></i>
+                            <div class="pt-2 mt-auto">
+                                <h5 class="fw-bold">Work Hours​</h5>
+                                <p class="mb-0">Monday to Friday: 9am – 5pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="rounded-0 shadow text-center box p-5 w-100 d-flex flex-column">
+                            <i class="ri-mail-fill ri-3x text-primary"></i>
+                            <div class="pt-2 mt-auto">
+                                <h5 class="fw-bold">Email Address</h5>
+                                <p class="mb-0">info@rmstechknowledgy.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="rounded-0 shadow text-center box p-5 w-100 d-flex flex-column">
+                            <i class="ri-smartphone-fill ri-3x text-primary"></i>
+                            <div class="pt-2 mt-auto">
+                                <h5 class="fw-bold">Phone Numbers​</h5>
+                                <p class="mb-0">+92306 0251145</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- location -->
+        <div class="pb-5">
+            <div class="container">
+                <div class="row align-items-center g-5 g-md-5">
+                    <div class="col-lg-6 col-12">
+                        <div class="ratio ratio-1x1">
+                            <iframe width="708" height="655" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7214918914397!2d67.09662187596007!3d24.873360044740185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339001d9deb65%3A0x10ddb11e052b904b!2sNASTP%202%20%2F%20Silicon%202!5e0!3m2!1sen!2s!4v1752495802800!5m2!1sen!2s" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="mb-4">
+                            <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                            <h1 class="fw-bold pb-2" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Send Us a</span> Message</h1>
+                        </div>
+                        <!-- Client Query Form Section -->
+                        <div id="contact-form-container" class="mb-4">
+                            {% include 'partials/website/contact_form.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock content %}

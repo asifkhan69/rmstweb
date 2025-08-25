@@ -1,0 +1,227 @@
+{% extends "website/base2.html" %}
+
+{% block navbar %}
+    {% load static %}
+    <!-- Navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand-lg app-nav py-3 py-lg-0 fixed-top bg-white w-100" id="mainNav">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center gap-0 site-brand">
+                    <div class="lh-1">
+                       <img src="{% static 'img/rmst-logo-trans.webp' %}" loading="lazy" alt="comp-logo" width="120" height="100">
+                    </div>
+                    <a class="stretched-link" href="{% url 'home' %}"></a>
+                    <div>
+                        <h5 class="fw-bold m-0 text-black">RMS Techknowledgy</h5>
+                        <small class="text-dark"></small>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active py-4" href="{% url 'home' %}"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link py-4" href="#company">Company</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#aboutgroup">Group</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#focus">Our Focus</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#advisors">Company Advisors</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="{% url 'home' %}#contact">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+{% endblock navbar %}
+
+{% block content %}
+    {% load static %}
+    <!-- hero-header -->
+    <div class="bg-otherpage vh-100 d-flex align-items-center flex-column">
+        
+        <div id="company" class="py-5 m-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="pt-lg-5">
+                            <p class="fw-bold text-uppercase text-primary">A Service and Solution</p>
+                            <h1 class="fw-bold display-3 lh-1 mb-4 text-black">Company bridging the gaps</h1>
+                            <p class="lead text-dark"><span class="text-primary">RMS Techknowledgy</span> was formed keeping in mind the commercial & technology side of corporate and consumer business a "B2B Business”. We do business where innovation meets the industry requirements.</p>
+                            <div class="d-flex align-items-center gap-3 mt-5">
+                                <a href="#aboutcomp" class="btn btn-primary btn-lg rounded-0">Learn More</a>
+                                <a href="#aboutgroup" class="btn btn-outline-primary btn-lg rounded-0">Group</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header section -->
+    <div id="aboutcomp" class="py-0">
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-4 g-md-5">
+                    <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                        <img src="{% static 'img/about-company.webp' %}" loading="lazy" alt="strategy-img" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="mb-5">
+                            <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                            <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Our</span> Company</h1>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> We operate in the space of InsurTech, FinTech and Payments. We are also unique in a way, where we look at business with a different perspective, our way of doing business is with a purpose ie, solving and filling the gaps of business and technological issues faced by industry players. Our proprietary platforms, which includes Insurtech Application, Web Portal Application and Fintech Solutions. These solutions can be developed on request or readily available to services the needs of our valued customers. </p>
+                            <br>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">The company has also introduced International Value Added Services in Pakistan and regional markets.</p>
+                            <br>
+                            <br>
+                        </div>
+                        <a href="#aboutgroup" class="btn btn-primary btn-lg rounded-0" data-aos="fade-up" data-aos-duration="900">FIND OUT MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutgroup" class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-md-5 g-4">
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Our</span> Group</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Our Group has experts and professionals from Banking, Insurance and Technology industry. Currently serving in Pakistan, Canada and Singapore markets.</p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Our portfolio of proprietary products enabled various industries verticals to operate automatedly with accuracy and convenience. </p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="{% static 'img/other-company2.webp' %}" loading="lazy" alt="meeting" class="img-fluid rounded-0">
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="focus" class="py-0">
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">At RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Our Focus</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">We exhibit a strong will to win in the marketplace and in every aspect of our business.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box w-100 d-flex flex-column">
+                            <i class="icofont-eye icofont-3x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Vision</h5>
+                                <p class="mb-0">To create a world class company that enhances the customer experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box w-100 d-flex flex-column">
+                            <i class="icofont-bullseye icofont-3x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Mission</h5>
+                                <p class="mb-0">Help the industry better understand their customer's requirement. Identify industry gaps, provide end-to-end services and solutions that can help improve their customers experience. Our aim is to continuously increase our services, products and geography</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box w-100 d-flex flex-column">
+                            <i class="icofont-unique-idea icofont-3x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Values</h5>
+                                <p class="mb-0">Excellence in what we do Innovation Creating Value Partner in Progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Global Advisor Sections -->
+    <div id="advisors" class="py-0">
+        <div class="py-5 bg-light">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Our Team of Advisors</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Global Expertise at our Fingertips: Our International Business Advisor, brings a wealth of global market knowledge and strategic insights to help us navigate and excel in international markets.</p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/sa.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Saadat Hussain Syed</h5>
+                                <p class="card-text text-muted mb-0">Advisor - UAE</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">A reputed senior International Banker with over 35 years diversified experience in Correspondent Banking, Trade & Payments, Networking, Compliance, Business Strategies & Loans etc..), Consumer & Commercial Banking, Risk Management, Project Financing & Syndications etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Ashraf-Ali.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Ashraf Ali Abdul Kadir</h5>
+                                <p class="card-text text-muted mb-0">Advisor - Malaysia</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">An experienced professional banker in consumer banking, particularly in e-banking, cards & payment, loans and deposits for over 28 years, having served in Citibank and Maybank, including as Senior Executive Vice-President at Maybank and Chief Executive Officer of Maybank Finance, and advisor  to Bank Islam Malaysia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-transparent border-0 rounded-0 text-center">
+                            <img src="{% static 'img/team/Karim-Aziz-pic2.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Karim Aziz</h5>
+                                <p class="card-text text-muted mb-0">Advisor - Canada</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                <p class="card-text text-muted text-start mb-0">Karim Aziz is a seasoned Compliance and Finance Executive with over 25 years of experience across the banking, financial services, and nonprofit sectors. Leveraging extensive international experience across Canada, Saudi Arabia, UAE, Bahrain, and Pakistan, he has delivered customized, high-level compliance and financial consulting services to clients seeking strategic insights, governance support, and regulatory alignment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card bg-transparent border-0 rounded-0 text-center">
+                                <img src="{% static 'img/team/Khalid-Khan-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Khalid I. Khan</h5>
+                                    <p class="card-text text-muted mb-0">Advisor - LATAM</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                    <p class="card-text text-muted text-start mb-0">Certified Network/Telecom and Solutions Architect
+With over 20 years of expertise, Khalid is an accomplished Certified Network/Telecom and Solutions Architect specializing in architecture design, deployment, transformation, support, and management. Khalid's work spans critical areas such as VoIP Telephony, LAN/WAN/WLAN, Data Center, IoT, and Cloud Computing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card bg-transparent border-0 rounded-0 text-center">
+                                <img src="{% static 'img/team/Puplus-pic.webp' %}" loading="lazy" class="card-img-top rounded-0" alt="team">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Paulus Budihardja</h5>
+                                    <p class="card-text text-muted mb-0">Advisor - Indonesia</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-center gap-3">
+                                    <p class="card-text text-muted text-start mb-0">Paulus Budihardja brings over three decades of extensive business experience encompassing marketing, sales management, business development, and general management. His expertise lies in strategic planning, process redesign and he excels in managing brands and business units.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- div for bg-elements close-->
+      
+{% endblock content %}

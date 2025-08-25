@@ -1,0 +1,39 @@
+<form
+  method="post"
+  hx-post="{% url 'client-query-hx' %}"
+  hx-target="#contact-form-container"
+  hx-swap="outerHTML"
+>
+    {% csrf_token %}
+    <div class="mb-4">
+        <label for="name" class="form-label">First &amp; Last Name</label>
+        <input type="text" name="name" class="form-control rounded-0 px-3 py-2" id="name" placeholder="Enter your name">
+    </div>
+    <div class="mb-4">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control rounded-0 px-3 py-2" id="email" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-4">
+        <label for="message" class="form-label">Comment or Message *</label>
+        <textarea name="message" class="form-control rounded-0 px-3 py-2" id="message" rows="6" placeholder="Enter your comment"></textarea>
+    </div>
+    <!-- Honeypot field -->
+    <div style="display: none;">
+        <label for="website">Leave this field empty</label>
+        <input type="text" name="website" id="website" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg rounded-0 px-3 py-2">Send Message</button>
+</form>
+
+{% if form.errors %}
+  <div class="alert alert-danger mt-3">
+    <ul>
+      {% for field in form %}
+        {% for error in field.errors %}
+          <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

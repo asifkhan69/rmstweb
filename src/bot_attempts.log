@@ -1,0 +1,358 @@
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3716
+Internal Server Error: /organisation/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home/#about' not found. 'home/#about' is not a valid view function or pattern name.
+"GET /organisation/ HTTP/1.1" 500 134083
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3605
+Internal Server Error: /organisation/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/defaulttags.py", line 1421, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/#about' from ''home'/#about'
+"GET /organisation/ HTTP/1.1" 500 184672
+Internal Server Error: /organisation/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home/#services' not found. 'home/#services' is not a valid view function or pattern name.
+"GET /organisation/ HTTP/1.1" 500 134327
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3716
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/bg-homepage.png HTTP/1.1" 404 1984
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/projects/project-image-4.webp HTTP/1.1" 404 2026
+"GET /static/img/team/FazzyAftab640x640.webp HTTP/1.1" 404 2020
+"GET /static/img/bg-homepage.png HTTP/1.1" 404 1984
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/bg-otherpage.png HTTP/1.1" 404 1987
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/other-company2.webp HTTP/1.1" 404 1996
+"GET /static/img/bg-homepage.png HTTP/1.1" 404 1984
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/projects/project-image-4.webp HTTP/1.1" 404 2026
+"GET /static/img/bg-otherpage2.png HTTP/1.1" 404 1990
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/bg-homepage.png HTTP/1.1" 404 1984
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/bg-homepage.png HTTP/1.1" 404 1984
+"GET /static/img/build-something-together.jpg HTTP/1.1" 404 2023
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/other-company2.webp HTTP/1.1" 404 1996
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/projects/project-image-4.webp HTTP/1.1" 404 2026
+"GET /static/img/team/FazzyAftab640x640.webp HTTP/1.1" 404 2020
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/projects/project-image-4.webp HTTP/1.1" 404 2026
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/about-strategy-image.webp HTTP/1.1" 404 2014
+"GET /static/img/build-something-together.webp HTTP/1.1" 404 2026
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+Internal Server Error: /sg/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: sgwebsite/sgindex.html
+"GET /sg/ HTTP/1.1" 500 83414
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3751
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+Internal Server Error: /contact/hx-submit/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/src/website/views.py", line 27, in post
+    status = send_email_notification(settings.DEFAULT_FROM_EMAIL, subject="Client Query Submitted From RMST-Website")
+  File "/Users/asifkhan/Development/rmstweb/src/website/genfunctions.py", line 18, in send_email_notification
+    html_message = render_to_string('email_notification.html', context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email_notification.html
+"POST /contact/hx-submit/ HTTP/1.1" 500 95757
+Internal Server Error: /contact/hx-submit/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/src/website/views.py", line 27, in post
+    status = send_email_notification(settings.DEFAULT_FROM_EMAIL, subject="Client Query Submitted From RMST-Website")
+  File "/Users/asifkhan/Development/rmstweb/src/website/genfunctions.py", line 18, in send_email_notification
+    html_message = render_to_string('email_notification.html', context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email_notification.html
+"POST /contact/hx-submit/ HTTP/1.1" 500 95757
+Internal Server Error: /contact/hx-submit/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/src/website/views.py", line 27, in post
+    status = send_email_notification(settings.DEFAULT_FROM_EMAIL, subject="Client Query Submitted From RMST-Website")
+  File "/Users/asifkhan/Development/rmstweb/src/website/genfunctions.py", line 18, in send_email_notification
+    html_message = render_to_string('email_notification.html', context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email_notification.html
+"POST /contact/hx-submit/ HTTP/1.1" 500 95757
+Internal Server Error: /contact/hx-submit/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/src/website/views.py", line 27, in post
+    status = send_email_notification(settings.DEFAULT_FROM_EMAIL, subject="Client Query Submitted From RMST-Website")
+  File "/Users/asifkhan/Development/rmstweb/src/website/genfunctions.py", line 18, in send_email_notification
+    html_message = render_to_string('email_notification.html', context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email_notification.html
+"POST /contact/hx-submit/ HTTP/1.1" 500 95757
+Internal Server Error: /contact/hx-submit/
+Traceback (most recent call last):
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/asifkhan/Development/rmstweb/src/website/views.py", line 27, in post
+    status = send_email_notification(settings.DEFAULT_FROM_EMAIL, subject="Client Query Submitted From RMST-Website")
+  File "/Users/asifkhan/Development/rmstweb/src/website/genfunctions.py", line 18, in send_email_notification
+    html_message = render_to_string('email_notification.html', context)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/asifkhan/Development/rmstweb/.venv/lib/python3.13/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: email_notification.html
+"POST /contact/hx-submit/ HTTP/1.1" 500 95757
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3751
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/pages/android-chrome-512x512.png HTTP/1.1" 404 2035
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/meeting-video.png HTTP/1.1" 404 1990
+"GET /static/img/pages/android-chrome-512x512.png HTTP/1.1" 404 2035
+"GET /static/img/other-company2.webp HTTP/1.1" 404 1996
+"GET /static/img/other-company2.webp HTTP/1.1" 404 1996
+"GET /static/img/other-company2.webp HTTP/1.1" 404 1996

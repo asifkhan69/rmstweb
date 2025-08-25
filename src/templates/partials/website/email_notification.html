@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Notification Template</title>
+</head>
+
+<body>
+{% if emailbody %}
+    <p>{{ emailbody }}</p>
+{% else %}
+    <p>Hi,</p>
+    <p></p>
+    <p>Subject: {{ emailsubject }}</p>
+    <p></p>
+    <p>Check the database for client detail query</p>
+{% endif %}
+
+</body>
+</html>
