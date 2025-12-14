@@ -3,4 +3,4 @@ from django.views import generic
 
 
 class SgHomeView(generic.TemplateView):
-    template_name = 'sgwebsite/sgindex.html'
+    template_name = 'partials/others/coming_soon.html'

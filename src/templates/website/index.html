@@ -1,7 +1,7 @@
 {% extends "website/base.html" %}
 
 {% block content %}
-    {% load static %}    
+    {% load static %}
     <!-- hero-header -->
     <div class="bg-homepage vh-100 d-flex align-items-center flex-column">
         <!-- Navbar -->
@@ -121,10 +121,28 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 col-12 d-flex">
                         <div class="border rounded-0 p-5 box">
+                            <i class="ri-signal-tower-fill ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Digital Services</h5>
+                                <p class="mb-0">We are leading provider of Digital Services. We empower businesses to transform their service via their new or existing digital platforms integrate through our digital API/SDK for various digital needs. Such as InApp Fingerprints, Liveliness Detection, National Identity Card Validation with OCR. For detail check Find More... </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
                             <i class="ri-dashboard-2-line ri-2x text-secondary"></i>
                             <div class="pt-2">
                                 <h5 class="fw-bold">Platforms</h5>
                                 <p class="mb-0">We specialize in crafting innovative proprietary platforms to meet the unique needs of our clients. Our solutions are designed to enhance automation with a solid foundation for businesses to thrive in a competitive digital landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="border rounded-0 p-5 box">
+                            <i class="ri-search-line ri-2x text-secondary"></i>
+                            <div class="pt-2">
+                                <h5 class="fw-bold">Resource Augmentation</h5>
+                                <p class="mb-0">Resource augmentation is commonly used in various industries, including IT, finance, healthcare, and more. It provides organizations with flexibility, agility, and access to specialized expertise, enabling them to achieve their goals more effectively.</p>
                             </div>
                         </div>
                     </div>
@@ -164,15 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 d-flex">
-                        <div class="border rounded-0 p-5 box">
-                            <i class="ri-search-line ri-2x text-secondary"></i>
-                            <div class="pt-2">
-                                <h5 class="fw-bold">Resource Augmentation</h5>
-                                <p class="mb-0">Resource augmentation is commonly used in various industries, including IT, finance, healthcare, and more. It provides organizations with flexibility, agility, and access to specialized expertise, enabling them to achieve their goals more effectively.</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center gap-3 mt-5">
                             <a href="{% url 'services-page' %}" class="btn btn-primary btn-lg rounded-0">Find More</a>

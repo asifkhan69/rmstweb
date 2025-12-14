@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'website', # website app
+    'sgwebsite', # Singapore Website
 
     'compressor' # static file compressor
 ]

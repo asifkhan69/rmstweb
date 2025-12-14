@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load compress static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/pages/android-chrome-512x512.png' %}" type="image/png">
+    <title>Coming Soon</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Coming Soon">
+    <meta name="description" content="In the meantime, Stay tuned. We are almost ready to launch.">
+    <!-- Custom Css -->
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="{% static 'vender/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="{% static 'vender/remixicon/remixicon.css' %}">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="{% static 'vender/icofont/icofont.min.css' %}">
+    <!-- AOS Css -->
+    <link rel="stylesheet" href="{% static 'vender/aos/dist/aos.css' %}">
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endcompress %}
+</head>
+<body id="page-top">
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+        <div class="page-loading-inner">
+            <div class="page-spinner"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+    <nav class="navbar osahan-main-nav navbar-expand-lg app-nav py-3 py-lg-0 fixed-top bg-white w-100" id="mainNav">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center gap-0 site-brand">
+                <div class="lh-1">
+                    <img src="{% static 'img/rmst-logo-trans.webp' %}" loading="lazy" alt="comp-logo" width="120" height="100">
+                </div>
+                <a class="stretched-link" href="{% url 'home' %}"></a>
+                <div>
+                    <h4 class="fw-bold m-0 text-black">RMS Techknowledgy Singapore</h4>
+                    <!-- <small class="text-dark">Private Limited</small> -->
+                </div>
+            </div>
+            <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active py-4" href="{% url 'home' %}"><i class="ri-apps-2-line"></i> Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Coming Soon Page -->
+    <div class="bg-otherpage2 vh-100 d-flex align-items-center flex-column">
+        <div class="py-5 m-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="pt-lg-5">
+                            <p class="fw-bold text-uppercase text-primary"></p>
+                            <h1 class="fw-bold display-3 lh-1 mb-4 text-black">Singapore Website is Coming Soon</h1>
+                            <p class="lead text-dark">In the meantime, Stay tuned. We are almost ready to launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootsrap Bundle Js -->
+    <script src="{% static 'vender/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Jquery Js -->
+    <script src="{% static 'vender/jquery/jquery-3.6.4.min.js' %}"></script>
+    <!-- AOS Js -->
+    <script src="{% static 'vender/aos/dist/aos.js' %}"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/demo.js' %}"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
