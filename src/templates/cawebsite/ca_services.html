@@ -1,0 +1,331 @@
+{% extends "cawebsite/cabase2.html" %}
+
+{% block navbar %}
+    {% load static %}
+    <!-- Navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand-lg app-nav py-3 py-lg-0 fixed-top bg-white w-100" id="mainNav">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center gap-0 site-brand">
+                    <div class="lh-1">
+                       <img src="{% static 'img/rmst-logo-trans.webp' %}" loading="lazy" alt="comp-logo" width="120" height"40">
+                    </div>
+                    <a class="stretched-link" href="{% url 'home' %}"></a>
+                    <div>
+                        <h5 class="fw-bold m-0 text-black">RMS Techknowledgy</h5>
+                        <small class="text-dark">Canada Inc.</small>
+                    </div>
+                </div>
+                <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active py-4" href="{% url 'cahome' %}"><i class="ri-apps-2-line"></i> Home</a>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link py-4" href="#platforms">Platforms</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#digitalservice">Digital Services</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#webdevelop">Web Development</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#digitalmarketing">Digital Marketing</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="#itconsulting">Consultancy</a></li>
+                        <li class="nav-item"><a class="nav-link py-4" href="{% url 'cahome' %}#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+{% endblock navbar %}
+{% block content %}
+    {% load static %}
+    <!-- hero-header -->
+    <div class="bg-otherpage2 vh-100 d-flex align-items-center flex-column">
+        <div id="services" class="py-5 m-auto">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="pt-lg-5">
+                            <p class="fw-bold text-uppercase text-primary">RMS Techknowledgy</p>
+                            <h1 class="fw-bold display-3 lh-1 mb-4 text-black">Company providing the services</h1>
+                            <p class="lead text-dark"><span class="text-primary">RMS Techknowledgy</span> specialize in delivering cutting-edge IT solutions tailored to meet the unique needs of our clients. Our team of experts is dedicated to providing a comprehensive range of services, including full stack software development, IT consulting, and more. We strive to empower businesses with innovative technology solutions that drive growth, efficiency, and success.</p>
+                            <div class="d-flex align-items-center gap-3 mt-5">
+                                <a href="#platforms" class="btn btn-primary btn-lg rounded-0">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero header end -->
+    <div id="platforms" class="py-0">
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row align-items-center g-4 g-md-5 mb-5">
+                    <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                        <img src="{% static 'img/projects/service-details1.webp' %}" loading="lazy" alt="service-img" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="mb-5">
+                            <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                            <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-2">Proprietary</span> Platforms</h1>
+                            <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> We develop proprietary platforms designed specifically for the financial industry. Our innovative solutions streamline operations, enhance security, and provide robust data analytics, enabling financial institutions to operate more efficiently and make informed decisions. With a deep understanding of the industry’s unique challenges, we create custom software that meets regulatory requirements and adapts to the evolving financial landscape. Partner with us to leverage technology that drives growth and ensures compliance in an ever-changing market. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-md-5 mb-5">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-black display-5" data-aos="fade-right" data-aos-duration="700">MSAASPRO</h2>
+                            <p class="text-primary lead" data-aos="fade-right" data-aos-duration="700">KYC AML/CFT Customer Screening</p>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">RegTech</p>
+                            <img src="{% static 'img/projects/Msaaspro-logo.webp' %}" loading="lazy" alt="service-img" class="img-fluid" width="150" height="120">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-black display-4" data-aos="fade-left" data-aos-duration="700">GODIGITAL</h2>
+                            <p class="text-primary lead" data-aos="fade-left" data-aos-duration="700">Customer on-boarding services</p>
+                            <p class="text-primary" data-aos="fade-left" data-aos-duration="700">FinTech</p>
+                            <img src="{% static 'img/projects/GoDigital-logo.webp' %}" alt="service-img" class="img-fluid" width="150" height="120">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-black display-4" data-aos="fade-right" data-aos-duration="700">CBOX</h2>
+                            <p class="text-primary lead" data-aos="fade-right" data-aos-duration="700">Compliance/Risk CRM </p>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">RegTech</p>
+                            <img src="{% static 'img/projects/CBOX-logo.webp' %}" loading="lazy" alt="service-img" class="img-fluid" width="150" height="120">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-black display-4" data-aos="fade-left" data-aos-duration="700">ABOX</h2>
+                            <p class="text-primary lead" data-aos="fade-left" data-aos-duration="700">Audit Management Platform </p>
+                            <p class="text-primary" data-aos="fade-left" data-aos-duration="700">GenTech</p>
+                            <img src="{% static 'img/projects/ABox-logo.webp' %}" loading="lazy" alt="service-img" class="img-fluid" width="150" height="120">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2 class="fw-bold text-black display-4" data-aos="fade-up" data-aos-duration="700">WINSURE</h2>
+                            <p class="text-primary lead" data-aos="fade-up" data-aos-duration="700">Insurance Hub Retail Platform </p>
+                            <p class="text-primary" data-aos="fade-up" data-aos-duration="700">InsurTech</p>
+                            <img src="{% static 'img/projects/winsure-logo.webp' %}" loading="lazy" alt="service-img" class="img-fluid" width="150" height="120">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="digitalservice" class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-md-5 g-4">
+                <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{% static 'img/projects/Digital-service-details1.webp' %}" loading="lazy" alt="digitalservices-img" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Digital</span> Services​</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> We provide advanced digital solutions that help businesses verify and onboard their clients with confidence.</p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> Our services include National Identity Card validation, OCR (Optical Character Recognition), liveliness detection, eKYC Video , Face Detection and a range of secure digital verification tools.</p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> With our cutting-edge technology, we ensure accuracy, efficiency, and compliance, enabling organizations to build trust and deliver seamless customer experiences.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-6 d-flex">
+                        <ul class="list-unstyled d-grid gap-3">
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Webcam Document Capture</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our Webcam Digital Service enables clients to securely capture and upload documents in real-time using their device’s camera. With built-in validation and image quality checks, the solution ensures clear, accurate, and reliable document capture—eliminating manual errors and simplifying the verification process for a seamless digital experience.
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>ID Card Capture/OCR</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our ID Card Capture service enables clients across multiple countries, including Canada, Pakistan, the Philippines, and Singapore, to scan and process identity cards quickly and securely. Using advanced OCR technology, we extract essential data fields and return them in structured JSON format. With integrated ID card validation, the solution ensures authenticity, accuracy, and compliance with regional standards, making digital onboarding seamless and reliable worldwide.
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>In-App Fingerprint Verification</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our In-App Fingerprint service integrates seamlessly with NADRA’s BVS (Biometric Verification System) to verify users through fingerprint authentication. This solution ensures highly secure and accurate biometric validation directly within the application, adding another strong layer of identity assurance for financial services, telecom, and other compliance-driven industries.
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                        <ul class="list-unstyled d-grid gap-3">
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Liveliness Detection</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our Liveliness Detection service ensures that identity verification is performed against a real, live person rather than static images or spoof attempts. Using AI-powered facial recognition and advanced detection techniques, the system identifies movements, expressions, and other biometric cues to confirm genuine user presence. This added layer of security protects against fraud and strengthens digital onboarding processes across all supported countries.
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Face Validation/Similarity</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our Face Validation and Similarity service enhances identity verification by matching the live facial capture of a user with the photo extracted from their ID card. Using advanced AI-driven facial recognition, the system ensures that the person presenting the ID is the same individual in real time. This provides a powerful layer of security, reducing impersonation risks and strengthening compliance in digital onboarding.
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Transliteration / Translation</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Our Transliteration and Translation service works in connection with our ID Card Capture & OCR solution to convert the extracted text into multiple languages or scripts. This ensures names, addresses, and other critical identity details are accurately represented across different languages. By combining OCR with intelligent transliteration and translation, we help organizations achieve seamless cross-border verification and compliance.
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="webdevelop" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-md-5 g-4">
+                <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{% static 'img/projects/webdevelop-image.webp' %}" loading="lazy" alt="digitalmarketing-img" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Web</span> Development​</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> Every modern solution is an amalgamation of multiple interconnected technologies. Therefore, we here at RMS Techknowledgy have assembled a team of web application developers with years of experience in all major technologies that make us one of the best web application development company.</p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> From front-end development to backend coding, user experience management to data management, cloud-based device spanning apps to on-system software, we have expertise in all the aspects of web application development</p>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> Our experienced web application developers closely work with customers in solving their problems through cutting-edge technology. We prioritize results and strictly adhere to agile development methodology to quickly track time-to-market without compromising with quality.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled d-grid gap-3">
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Full Stack Expertise</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>We are one of the very few who have expertise in all of the latest technologies on all major platforms
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Mobile Apps iOs - Android - Cross Platform
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Web Platforms Frontend - Backend
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Artificial Intelligence Computer Vision - Deep Learning - Generative AI
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Device-agnostic Solutions</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>All of our solutions are mobile-ready and are tested on all major mobile devices
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Textile Industry Device Handling
+                                </li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled d-grid gap-3">
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Integration and API Experts</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>We have a penchant of carrying out even the most difficult software integration
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>REST APIs
+                                </li>
+                                <li>
+                                    <i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>SDKs (System Development Kits)
+                                </li>
+                            </ul>
+                            <li class="lead"><i class="ri-checkbox-circle-fill ri-lg text-primary me-1"></i>Scalability and Flexibility</li>
+                            <ul>
+                                <li><i class="ri-checkbox-blank-circle-fill me-1"></i>Using micro-service architecture, we create solutions that are easily extensible and scalable
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="digitalmarketing" class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-md-5 g-4">
+                <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{% static 'img/projects/Digital-Marketing.webp' %}" loading="lazy" alt="digitalmarketing-img" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Digital</span> Marketing</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> In today’s digital landscape, a strong online presence is essential for success. Our Digital Marketing vertical is dedicated to helping businesses thrive by harnessing the power of the internet. We offer a comprehensive suite of services, including SEO, social media marketing, content creation, and paid advertising, all tailored to meet your unique goals. Our expert team uses the latest tools and strategies to ensure your brand reaches the right audience, drives engagement, and achieves measurable results. Let us help you navigate the digital world and transform your online presence into a powerful business asset. </p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Search Engine Optimization SEO</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Enhancing website visibility in search engine results.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Content Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Creating and distributing valuable content to attract and engage a target audience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Social Media Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Using social media platforms to promote products and engage with customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Pay-Per-Click Advertising (PPC)</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Running paid ads on search engines and other platforms.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Email Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Sending targeted email campaigns to nurture and convert leads.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Affiliate Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Partnering with affiliates to promote products and earn commissions on sales.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Influencer Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Collaborating with influencers to reach their audience and promote products.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="text-center">
+                            <h5 class="text-black display-9" data-aos="fade-right" data-aos-duration="700">Video Marketing</h5>
+                            <p class="text-primary" data-aos="fade-right" data-aos-duration="700">Creating and promoting video content to engage audiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="itconsulting" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-md-5 g-4">
+                <div class="col-lg-6 col-12" data-aos="fade-up" data-aos-duration="600">
+                    <img src="{% static 'img/projects/consultant-image.webp' %}" loading="lazy" alt="digitalmarketing-img" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="mb-5">
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <h1 class="fw-bold pb-2 display-5" data-aos="fade-up" data-aos-duration="600"><span class="bg-warning text-black px-3">Technology</span> Consultant​</h1>
+                        <p class="lead m-0" data-aos="fade-up" data-aos-duration="700"> We at RMS Techknowledgy, focus on helping clients with the development and application of Information Technology (IT) within their organization or remotely.
+
+                        Our consultants focus on transitions (projects) in the RMS Techknowledgy-landscape, contrary to regular IT-employees, who work on day-to-day IT operations (so-called ‘business as usual’ activities). The majority of RMS Techknowledgy-consultants work on implementation projects, for instance, extensive ERP systems applications, where their role may vary from project management to process management or system integration. Within IT consulting, the fastest growing markets are digital, data analytics (also known as data science), cyber security and IT forensics.. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content%}

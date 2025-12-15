@@ -482,3 +482,11 @@ Not Found: /.well-known/appspecific/com.chrome.devtools.json
 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3862
 "GET /static/img/pages/android-chrome-512x512.png HTTP/1.1" 404 2035
+Not Found: /reports
+"GET /reports HTTP/1.1" 404 3885
+Not Found: /reports
+"GET /reports HTTP/1.1" 404 3885
+Not Found: /reports
+"GET /reports HTTP/1.1" 404 3885
+Not Found: /reports
+"GET /reports HTTP/1.1" 404 3885

@@ -1,4 +1,4 @@
-{% extends "website/base.html" %}
+{% extends "cawebsite/cabase.html" %}
 
 {% block content %}
     {% load static %}
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="{% url 'organisation-page' %}" class="btn btn-primary btn-lg rounded-0" data-aos="fade-up" data-aos-duration="900">FIND OUT MORE</a>
+                        <a href="{% url 'caorganisation-page' %}" class="btn btn-primary btn-lg rounded-0" data-aos="fade-up" data-aos-duration="900">FIND OUT MORE</a>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@
 
                     <div class="col-12">
                         <div class="d-flex align-items-center justify-content-center gap-3 mt-5">
-                            <a href="{% url 'services-page' %}" class="btn btn-primary btn-lg rounded-0">Find More</a>
+                            <a href="{% url 'caservices-page' %}" class="btn btn-primary btn-lg rounded-0">Find More</a>
                             <a href="#contact" class="btn btn-outline-primary btn-lg rounded-0">Take Action</a>
                         </div>
                     </div>
@@ -563,7 +563,7 @@ With over 20 years of expertise, Khalid is an accomplished Certified Network/Tel
             <div class="container py-5">
                 <div class="row justify-content-center mb-5">
                     <div class="col-xl-6 col-lg-8 col-md-9 col-12 text-center">
-                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy</small>
+                        <small class="text-uppercase badge rounded-0 bg-primary">RMS Techknowledgy Canada Inc</small>
                         <h1 class="fw-bold pb-2 display-5 mt-2" data-aos="fade-up" data-aos-duration="600">Contact Us</h1>
                         <p class="lead m-0" data-aos="fade-up" data-aos-duration="700">Let’s work together to experience exceptional business relationship, that can take your business to next level of automation.</p>
                     </div>
@@ -571,16 +571,18 @@ With over 20 years of expertise, Khalid is an accomplished Certified Network/Tel
                 <div class="row g-5">
                     <div class="col-lg-6 col-12">
                         <div class="card border-0 text-bg-dark rounded-0 overflow-hidden">
-                            <img src="{% static 'img/nastp2-office2.webp' %}" loading="lazy" class="card-img opacity-50" alt="pakistan">
+                            <img src="{% static 'img/cn-tower.webp' %}" loading="lazy" class="card-img opacity-50" alt="canada">
                             <div class="card-img-overlay d-flex align-items-end p-5">
                                 <div>
-                                    <h2 class="card-title fw-bold">Pakistan</h2>
-                                    <p>RMS TECHKNOWLEDGY PRIVATE LIMITED</p>
-                                    <p class="card-text">GROUND FLOOR OFFICE NO. 04 - A, BUILDING S- 4, NASTP 2 SILICON VALLEY, SHAHRAH-E- FAISAL, KARACHI, PAKISTAN.</p>
+                                    <h2 class="card-title fw-bold">Canada</h2>
+                                    <p>RMS TECHKNOWLEDGY CANADA INC</p>
+                                    <p class="card-text">82 Chayna Cres Maple L6A 0N1 Ontario Canada.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                    <!--
                     <div class="col-lg-6 col-12">
                         <div class="card border-0 text-bg-dark rounded-0 overflow-hidden">
                             <img src="{% static 'img/Singapore-office-pic.webp' %}" loading="lazy" class="card-img opacity-50" alt="dubai">
@@ -593,27 +595,14 @@ With over 20 years of expertise, Khalid is an accomplished Certified Network/Tel
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="card border-0 text-bg-dark rounded-0 overflow-hidden">
-                            <img src="{% static 'img/cn-tower.webp' %}" loading="lazy" class="card-img opacity-50" alt="dubai">
-                            <div class="card-img-overlay d-flex align-items-end p-5">
-                                <div>
-                                    <h2 class="card-title fw-bold">Canada</h2>
-                                    <p>RMS TECHKNOWLEDGY CANADA INC.</p>
-                                    <p class="card-text">82 CHANYA CRES MAPLE L6A 0N1 ONTARIO CANADA.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 py-2">
+                    -->
+                <div class="row g-5">
                     <div class="col-lg-3 col-md-6 col-12 d-flex">
                         <div class="rounded-0 shadow text-center box p-5 w-100 d-flex flex-column">
                             <i class="ri-road-map-fill ri-3x text-primary"></i>
                             <div class="pt-2 mt-auto">
                                 <h5 class="fw-bold">Physical Address​</h5>
-                                <p class="mb-0">Ground Floor Office No. 04 - A, Building S- 4, NASTP 2 Silicon Valley, Shahrah-e- Faisal, Karachi, Pakistan.</p>
+                                <p class="mb-0">82 Chayna Cres Maple L6A 0N1 Ontario Canada</p>
                             </div>
                         </div>
                     </div>
@@ -640,7 +629,7 @@ With over 20 years of expertise, Khalid is an accomplished Certified Network/Tel
                             <i class="ri-smartphone-fill ri-3x text-primary"></i>
                             <div class="pt-2 mt-auto">
                                 <h5 class="fw-bold">Phone Numbers​</h5>
-                                <p class="mb-0">+92306 0251145</p>
+                                <p class="mb-0">+1 647 9977034</p>
                             </div>
                         </div>
                     </div>
@@ -653,7 +642,7 @@ With over 20 years of expertise, Khalid is an accomplished Certified Network/Tel
                 <div class="row align-items-center g-5 g-md-5">
                     <div class="col-lg-6 col-12">
                         <div class="ratio ratio-1x1">
-                            <iframe width="708" height="655" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7214918914397!2d67.09662187596007!3d24.873360044740185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339001d9deb65%3A0x10ddb11e052b904b!2sNASTP%202%20%2F%20Silicon%202!5e0!3m2!1sen!2s!4v1752495802800!5m2!1sen!2s" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <iframe width="708" height="655" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4376.1282392044195!2d-79.50653602490553!3d43.85211525943793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b293b37c39a77%3A0x4278a6926c515ed4!2s82%20Chayna%20Crescent%2C%20Maple%2C%20ON%20L6A%200N1%2C%20Canada!5e0!3m2!1sen!2s!4v1765785884584!5m2!1sen!2s" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
